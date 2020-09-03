@@ -1,0 +1,358 @@
+@txt-color1:#ffffff;
+@txt-color2:#deb92e;
+@txt-color3:#cb6768;
+@golden:#edc737;
+@bg-header: rgba(40, 39, 38, .90);
+@bg-features: #cb6768;
+@bg-works:#f5f0ed;
+@bg-contact:#cb6768;
+red
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/* уюираем черные рамки при фокусе */
+*, a:focus {
+
+    outline: none !important;
+
+}
+h1,h2{
+font-weight: normal;
+}
+h2{
+  color:@txt-color2;
+    text-align: center;
+    margin: 5rem 0;
+}
+body{
+  
+}
+.col{
+  background-color:#fff;
+  margin: 0 10px;
+}
+// main page 
+.main{
+  padding-top: 5rem;
+  height: 100vh;
+  width: 100%;
+  // background-image: url(../img/Header.png);
+  background: url(../img/Header.png) top no-repeat;
+  .container{
+
+    
+  }
+  &-menu{
+    
+    background-color: @bg-header;
+    // margin-top: 5rem;
+    height: 4.8125rem;
+    &-col{
+      display: flex;
+    }
+    &-logo{
+      display: flex;
+      &-div{
+        margin: auto;
+        display: inline-block;
+        vertical-align: middle;
+
+        
+      }
+      &-text{
+        margin: auto;
+        &-p{
+          font-size: 2rem;
+          color: #fb7d7e;
+        }
+        
+      }
+    }
+    &-list{
+        margin:auto;
+      ul, li {
+        display: block;
+        
+      }
+      &-item a{
+        color:@txt-color1;
+        font-size: 1rem;
+        margin-left: 3.5rem;
+
+      }
+    }
+  }
+  &-content{
+    text-align: left;
+
+    &-header{
+      margin: 75px 0 44px 0 ;
+      font-size: 32px;
+      strong{
+        font-weight: normal;
+        color:#f06d6e;
+        font-size: 32px;
+      }
+    }
+    &-text{
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+    &-button{
+      
+      &-text{
+        margin:auto;
+      }
+
+    }
+  }
+}
+//  кнопки
+.button{
+  border: #fac81b solid 1px;
+  border-left: #fac81b solid 4px; 
+  height: 50px;
+  width: 150px;
+  display: flex;
+  &-text{
+    margin:auto;
+  }
+  &-features{
+    margin:auto;
+  }
+}
+// Преемущуства 
+.features{
+  margin-right: 12px;
+  padding-bottom: 77px;
+  background-color: @bg-features;
+  img{
+    margin-bottom: 4rem;
+  }
+  h2{ 
+    font-size: 35px;
+    display: block;
+    color:@txt-color2;
+    text-align: center;
+  }
+  &-container{
+    margin-top: 84px;
+    display: flex;
+  }
+  &-content{
+    text-align: center;
+    color:@txt-color1;
+    flex:1;
+    &-header{
+      font-size: 22px;
+      margin-bottom: 2rem;
+      
+      &-gold{
+        color:@golden;
+      }
+    }
+    &-img{
+
+    }
+    &-text{
+      min-height:50px;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+  }
+
+}
+// лудшие работы
+.works{
+  padding-bottom: 5rem;
+  background-color:@bg-works;
+  &-content{
+    max-width: 100%;
+    .row{
+      max-width: 100%;
+      .i1{
+        background:url(/img/i1.png) center no-repeat;
+        height: 247px;
+      }
+      .i2{
+        background:url(/img/i2.png) center no-repeat;
+        height: 247px;
+      }
+      .i3{
+        background:url(/img/i3.png) center no-repeat;
+        height: 247px;
+      }
+      .i4{
+        background:url(/img/i4.png) center no-repeat;
+        height: 247px;
+        background-size:cover;
+      }
+      .i5{
+        background:url(/img/i5.png) center no-repeat;
+        height: 247px;
+        background-size:cover;
+      }
+      .i6{
+        background:url(/img/i6.png) center no-repeat;
+        height: 247px;
+
+      }
+      .i7{
+        background:url(/img/i7.png) center no-repeat;
+        height: 247px;
+      }
+      .i8{
+        background:url(/img/i8.png) center no-repeat;
+        height: 247px;
+      }
+    }
+  }
+  &-header{
+    color:@txt-color2;
+    text-align: center;
+    margin: 5rem 0;
+  }
+  
+}
+.blog{
+  padding-bottom: 5rem;
+  &-content{
+    &-text{
+      span{
+        color:@txt-color3;
+      }
+      text-align: center;
+    }
+    &-img{
+      text-align: center;
+      display: block;
+    }
+    &-avatar{
+      text-align: center;
+      display: block;
+      margin: -40px auto 30px auto;
+    }
+  }
+}
+.line{
+  text-align: center;
+  display: block;
+  margin:0 auto;
+}
+.contact{
+  
+  height: 700px;
+  background-image:url(../img/map.png);
+  background-size:cover;
+  padding-top:180px;
+  &-content{
+    background-color:@bg-contact;
+    img{
+      text-align: center;
+      display: block;
+      margin:0 auto;
+
+    }
+    h2{
+      margin: 30px 0;
+      padding:0;  
+
+    }
+    &-text{
+      color:@txt-color1;
+      text-align: center;
+      font-size: 13px;
+    }
+    .container{
+      
+    }
+
+
+  }
+  &-form{
+
+    
+    &-input{
+      .right{
+        margin:0 auto;
+        float: right;
+      }
+      height: 45px;
+      width: 47.5%;
+      padding:15px 20px;
+      background-color:@bg-contact;
+      border:1px white solid;
+      color:white;
+      &::-webkit-input-placeholder{
+        color:white;
+      }
+      &:active{
+        border:none;
+      }
+
+    }
+    &-textarea{
+      width: 100%;
+      margin-top: 20px;
+      height: 125px;
+
+    }
+    &-box{
+      	display: flex;
+      	position: relative;
+    	display: flex;
+    	flex-wrap: nowrap;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+    .button{
+
+      text-align: center;
+      background: url(../img/mail1.png) @bg-contact center no-repeat;
+      background-image:cover;
+      border:none;
+      padding: 0;
+      margin:30px auto;
+    }
+    /* &-row{
+      display: flex;
+      padding-bottom: 1rem;
+      width: 100%;
+      justify-content: center;
+      &-col{
+        flex-basis:20%;
+        flex: 1;
+        &-area{
+          flex-basis:100%;
+        }
+      }
+      
+    } */
+  }
+}
+@media (max-width: 991px) {
+  .blog{
+  padding-bottom: 5rem;
+  &-content{
+    &-text{
+      display: inline-block;
+      span{
+        color:@txt-color3;
+      }
+      text-align: right;
+    }
+    &-img{
+      display: inline-block;
+    }
+    &-avatar{
+      text-align: right;
+      display: block;
+      
+    }
+  }
+}
+  
+}

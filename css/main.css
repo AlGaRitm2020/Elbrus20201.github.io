@@ -1,0 +1,244 @@
+red * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* уюираем черные рамки при фокусе */
+*,
+a:focus {
+  outline: none !important;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+h2 {
+  color: #deb92e;
+  text-align: center;
+  margin: 5rem 0;
+}
+.col {
+  background-color: #fff;
+  margin: 0 10px;
+}
+.main {
+  padding-top: 5rem;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/Header.png) top no-repeat;
+}
+.main-menu {
+  background-color: rgba(40, 39, 38, 0.9);
+  height: 4.8125rem;
+}
+.main-menu-col {
+  display: flex;
+}
+.main-menu-logo {
+  display: flex;
+}
+.main-menu-logo-div {
+  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu-logo-text {
+  margin: auto;
+}
+.main-menu-logo-text-p {
+  font-size: 2rem;
+  color: #fb7d7e;
+}
+.main-menu-list {
+  margin: auto;
+}
+.main-menu-list ul,
+.main-menu-list li {
+  display: block;
+}
+.main-menu-list-item a {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-left: 3.5rem;
+}
+.main-content {
+  text-align: left;
+}
+.main-content-header {
+  margin: 75px 0 44px 0 ;
+  font-size: 32px;
+}
+.main-content-header strong {
+  font-weight: normal;
+  color: #f06d6e;
+  font-size: 32px;
+}
+.main-content-text {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.main-content-button-text {
+  margin: auto;
+}
+.button {
+  border: #fac81b solid 1px;
+  border-left: #fac81b solid 4px;
+  height: 50px;
+  width: 150px;
+  display: flex;
+}
+.button-text {
+  margin: auto;
+}
+.button-features {
+  margin: auto;
+}
+.features {
+  margin-right: 12px;
+  padding-bottom: 77px;
+  background-color: #cb6768;
+}
+.features img {
+  margin-bottom: 4rem;
+}
+.features h2 {
+  font-size: 35px;
+  display: block;
+  color: #deb92e;
+  text-align: center;
+}
+.features-container {
+  margin-top: 84px;
+  display: flex;
+}
+.features-content {
+  text-align: center;
+  color: #ffffff;
+  flex: 1;
+}
+.features-content-header {
+  font-size: 22px;
+  margin-bottom: 2rem;
+}
+.features-content-header-gold {
+  color: #edc737;
+}
+.features-content-text {
+  min-height: 50px;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+.works {
+  padding-bottom: 5rem;
+  background-color: #f5f0ed;
+}
+.works-content {
+  max-width: 100%;
+}
+.works-content .row {
+  max-width: 100%;
+}
+.works-content .img {
+  width: inherit;
+}
+.works-header {
+  color: #deb92e;
+  text-align: center;
+  margin: 5rem 0;
+}
+.blog {
+  padding-bottom: 5rem;
+}
+.blog-content-text {
+  text-align: center;
+}
+.blog-content-text span {
+  color: #cb6768;
+}
+.blog-content-avatar {
+  text-align: center;
+  display: block;
+  margin: -40px auto 30px auto;
+}
+.line {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.contact {
+  height: 700px;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  padding-top: 180px;
+}
+.contact-content {
+  background-color: #cb6768;
+}
+.contact-content img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.contact-content h2 {
+  margin: 30px 0;
+  padding: 0;
+}
+.contact-content-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+}
+.contact-form {
+  /* &-row{
+      display: flex;
+      padding-bottom: 1rem;
+      width: 100%;
+      justify-content: center;
+      &-col{
+        flex-basis:20%;
+        flex: 1;
+        &-area{
+          flex-basis:100%;
+        }
+      }
+      
+    } */
+}
+.contact-form-input {
+  height: 45px;
+  width: 47.5%;
+  padding: 15px 20px;
+  background-color: #cb6768;
+  border: 1px white solid;
+  color: white;
+}
+.contact-form-input .right {
+  margin: 0 auto;
+  float: right;
+}
+.contact-form-input::-webkit-input-placeholder {
+  color: white;
+}
+.contact-form-input:active {
+  border: none;
+}
+.contact-form-textarea {
+  width: 100%;
+  margin-top: 20px;
+  height: 125px;
+}
+.contact-form-box {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form .button {
+  text-align: center;
+  background: url(../img/mail1.png) #cb6768 center no-repeat;
+  background-image: cover;
+  border: none;
+  padding: 0;
+  margin: 30px auto;
+}
